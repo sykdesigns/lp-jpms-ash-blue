@@ -1,0 +1,199 @@
+    * {
+        margin: 0;
+        font-family: "proxima-nova", sans-serif;
+        font-weight: 300, 400, 500, 700, 900;
+
+    }
+
+    :root {
+        --arrow-bg: rgba(255, 255, 255, 0.3);
+        --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+        --select-bg: rgba(255, 255, 255, 0.2);
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
+
+    }
+
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: 400px 2fr 130px;
+        grid-template-rows: auto;
+
+    }
+
+
+    .primary-nav {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        display: flex;
+        align-items: center;
+        padding: 16px;
+
+    }
+
+    svg {
+        width: 16px;
+        height: auto;
+        flex-shrink: 0;
+        fill: #3A3D46;
+    }
+
+    .sub-nav {
+        grid-column: 2 / 3;
+        grid-row: 1;
+        align-self: center;
+
+
+    }
+
+    .sub-nav a {
+        text-decoration: none;
+        margin-right: 24px;
+        font-size: 1em;
+        font-weight: 500;
+        color: #3A3D46;
+    }
+
+    .sub-nav a:hover {
+        text-decoration: underline;
+    }
+
+
+    .ico-nav {
+        grid-column: 3 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 20px;
+
+    }
+
+    .logo-short {
+        display: none;
+    }
+
+    .logo-long {
+        width: 325px;
+        height: 18px;
+        margin-left: 12px;
+    }
+
+    .hero-vid {
+        grid-row: 1 / span 2;
+        width: 100%;
+        position: relative;
+ 
+    }
+
+    .hero-copy {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        z-index: 5;
+      
+    }
+
+    .hero-copy img {
+        width: 55%;
+    }
+
+    .intro {
+        font-size: 1rem;
+        text-transform: uppercase;
+
+    }
+
+    .hero-copy h1 {
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+
+    .hero-copy p {
+        font-size: 1.15rem;
+        width: 55%;
+    }
+
+    .cta {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cta a {
+        font-size: 1.15rem;
+        color: #3A3D46;
+        text-decoration: none;
+        margin-right: 8px;
+        text-transform: capitalize;
+        font-weight: 700;
+ 
+    }
+
+    .cta a:hover {
+        text-decoration: underline;
+    }
+
+
+
+    .block1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        color: #3A3D46;
+
+    } 
+
+
+    .block1 .list {
+        grid-column: 1;
+        padding: 24px;
+        margin-top: 200px;
+
+    }
+
+    .block1 h1 {
+        font-size: 2rem;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    .item {
+        display: flex;
+        align-items: start;
+        margin-bottom: 16px;
+
+    }
+
+    .item svg {
+        width: 20px;
+        margin-right: 12px;
+    }
+
+    .image {
+        grid-column: 2;
+
+    }
+
+   .image .mobile {
+        display: none;
+    }
+
+    .image .large {
+        width: 90%;
+    }
+
+
+    .block2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        color: #3A3D46;
+    }

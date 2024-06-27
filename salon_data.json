@@ -1,0 +1,326 @@
+[
+  {
+    "State": "Texas",
+    "City": "Amarillo",
+    "Salon": "Hair By Kellie",
+    "Address 1": "2626 Wolflin Ave",
+    "Address 2": "Suite 19",
+    "Zip Code": 79106,
+    "Phone": "806-290-0966"
+  },
+  {
+    "State": "South Carolina",
+    "City": "Orangeburg",
+    "Salon": "Southern Sass Salon",
+    "Address 1": "1967 Carolina Ave",
+    "Address 2": null,
+    "Zip Code": 29115,
+    "Phone": "803-707-6384"
+  },
+  {
+    "State": "Massachusettes",
+    "City": "Newton",
+    "Salon": "HairCuts",
+    "Address 1": "244 Needham Street",
+    "Address 2": null,
+    "Zip Code": 2464,
+    "Phone": "617-527-2399"
+  },
+  {
+    "State": "Virginia",
+    "City": "Fredericksburg",
+    "Salon": "Downtown Salon",
+    "Address 1": "103A Amelia Street",
+    "Address 2": null,
+    "Zip Code": 22401,
+    "Phone": "540-371-1011"
+  },
+  {
+    "State": "California",
+    "City": "Encino",
+    "Salon": "Lulu Liotta at Butterfly Loft Salon & Spa",
+    "Address 1": "17401 Ventura Blvd",
+    "Address 2": "B19",
+    "Zip Code": 91316,
+    "Phone": "818-383-7666"
+  },
+  {
+    "State": "Texas",
+    "City": "Lewisville",
+    "Salon": "Hair Garage",
+    "Address 1": "1301 Justin Rd. ",
+    "Address 2": "Suite 203",
+    "Zip Code": 75067,
+    "Phone": "469-647-0480"
+  },
+  {
+    "State": "Minnesota",
+    "City": "St Paul",
+    "Salon": "Moxie Uptown",
+    "Address 1": "700 Grand Ave ",
+    "Address 2": "#100B",
+    "Zip Code": 55105,
+    "Phone": "651-251-6820"
+  },
+  {
+    "State": "Oregon",
+    "City": "Portland",
+    "Salon": "The Salon aRTs",
+    "Address 1": "1849 SW Salmon Street ",
+    "Address 2": "Multinomah Athletic Club",
+    "Zip Code": 97205,
+    "Phone": "503-517-2335"
+  },
+  {
+    "State": "Kentucky",
+    "City": "Russell Springs",
+    "Salon": "Town and Country Hair Shoppe",
+    "Address 1": "40 Hwy 910 ",
+    "Address 2": "Suite A",
+    "Zip Code": 42642,
+    "Phone": "270-866-3854"
+  },
+  {
+    "State": "New York",
+    "City": "Saratoga Springs",
+    "Salon": "Hair Creations",
+    "Address 1": "2 Phila Street",
+    "Address 2": null,
+    "Zip Code": 12866,
+    "Phone": "518-583-4281"
+  },
+  {
+    "State": "Hawaii",
+    "City": "Lihue",
+    "Salon": "Hair Razors Salon",
+    "Address 1": "4365 Rice Street",
+    "Address 2": null,
+    "Zip Code": 96766,
+    "Phone": "808-246-0800"
+  },
+  {
+    "State": "Massachusettes",
+    "City": "Danvers",
+    "Salon": "En Vogue Salon & Day Spa",
+    "Address 1": "10 Page St",
+    "Address 2": null,
+    "Zip Code": 1923,
+    "Phone": "978-777-4947"
+  },
+  {
+    "State": "Louisiana",
+    "City": "Monroe",
+    "Salon": "Rain Salon and Day Spa",
+    "Address 1": "407 Desiard St",
+    "Address 2": null,
+    "Zip Code": 71201,
+    "Phone": "318-651-8088"
+  },
+  {
+    "State": "California",
+    "City": "Tracy",
+    "Salon": "Hairdressers Rock Studios",
+    "Address 1": "20 West 10th Street",
+    "Address 2": null,
+    "Zip Code": 95376,
+    "Phone": "209-836-6062"
+  },
+  {
+    "State": "Massachusettes",
+    "City": "Middleborough",
+    "Salon": "New Concepts",
+    "Address 1": "111 Center St",
+    "Address 2": null,
+    "Zip Code": 2346,
+    "Phone": "508-946-2353"
+  },
+  {
+    "State": "Louisiana",
+    "City": "Baton Rouge",
+    "Salon": "A Marcelite Salon",
+    "Address 1": "439 N. 6th Street",
+    "Address 2": null,
+    "Zip Code": 70801,
+    "Phone": "225-379-3445"
+  },
+  {
+    "State": "Virginia",
+    "City": "Harrisonburg",
+    "Salon": "Boyds by BABS",
+    "Address 1": "105 S Carlton Street",
+    "Address 2": null,
+    "Zip Code": 22801,
+    "Phone": "540-810-1029"
+  },
+  {
+    "State": "California",
+    "City": "Rancho Santa Margarita",
+    "Salon": "C and E STUDIO",
+    "Address 1": "22441 Antonio Parkway 7",
+    "Address 2": null,
+    "Zip Code": 92679,
+    "Phone": "714-290-4376"
+  },
+  {
+    "State": "Louisiana",
+    "City": "Baton Rouge",
+    "Salon": "Via Veneto",
+    "Address 1": "7520 Perkins Road ",
+    "Address 2": "Suite 240b",
+    "Zip Code": 70808,
+    "Phone": "225-928-7155"
+  },
+  {
+    "State": "New York",
+    "City": "Hudson",
+    "Salon": "Salon PF",
+    "Address 1": "223 County Route 20",
+    "Address 2": null,
+    "Zip Code": 12534,
+    "Phone": "818-980-3166"
+  },
+  {
+    "State": "Oklahoma",
+    "City": "Ada",
+    "Salon": "NV Salon & Spa",
+    "Address 1": "409 NW JA Richardson Loop",
+    "Address 2": null,
+    "Zip Code": 74820,
+    "Phone": "580-436-9103"
+  },
+  {
+    "State": "California",
+    "City": "Cypress",
+    "Salon": "Salon 25",
+    "Address 1": "9205 Valley View Street",
+    "Address 2": null,
+    "Zip Code": 90630,
+    "Phone": "714-952-2030"
+  },
+  {
+    "State": "Massachusettes",
+    "City": "Grafton",
+    "Salon": "Chromatics Hair & Color Co.",
+    "Address 1": "377 Providence Rd",
+    "Address 2": null,
+    "Zip Code": 1560,
+    "Phone": "508-839-0669"
+  },
+  {
+    "State": "California",
+    "City": "Long Beach",
+    "Salon": "George Oliveri Hair Design",
+    "Address 1": "3019 Los Coyotes Diagonal",
+    "Address 2": null,
+    "Zip Code": 90808,
+    "Phone": "562-421-4744"
+  },
+  {
+    "State": "Massachusettes",
+    "City": "Northampton",
+    "Salon": "Changes",
+    "Address 1": "157 Main Street",
+    "Address 2": null,
+    "Zip Code": 1060,
+    "Phone": "413-586-2600"
+  },
+  {
+    "State": "Philadelphia",
+    "City": "Coudersport",
+    "Salon": "Elaines Casual Cuts",
+    "Address 1": "14 E 2nd St",
+    "Address 2": null,
+    "Zip Code": 16915,
+    "Phone": "814-274-7835"
+  },
+  {
+    "State": "Nevada",
+    "City": "Henderson",
+    "Salon": "Electric Chair",
+    "Address 1": "2200 W. Horion Ridge Pkwy",
+    "Address 2": "#B",
+    "Zip Code": 89052,
+    "Phone": "702-367-7300"
+  },
+  {
+    "State": "New Hampshire",
+    "City": "Hooksett",
+    "Salon": "Dude's Barbershop and Styling",
+    "Address 1": "1311 Hooksett Road",
+    "Address 2": null,
+    "Zip Code": 3106,
+    "Phone": "603-626-0533"
+  },
+  {
+    "State": "Colorado",
+    "City": "Centennial",
+    "Salon": "Kim Bennett Studios",
+    "Address 1": "8230 S. Colorado Blvd",
+    "Address 2": "#1",
+    "Zip Code": 80122,
+    "Phone": "720-299-9739"
+  },
+  {
+    "State": "North Carolina",
+    "City": "Reidsville",
+    "Salon": "The Classic Cut",
+    "Address 1": "1560-D Freeway Drive",
+    "Address 2": null,
+    "Zip Code": 27320,
+    "Phone": "336-349-3339"
+  },
+  {
+    "State": "Florida",
+    "City": "Okeechobee",
+    "Salon": "Stafford's Salon",
+    "Address 1": "313 SW Park Street",
+    "Address 2": null,
+    "Zip Code": 34972,
+    "Phone": "863-763-3933"
+  },
+  {
+    "State": "Nevada",
+    "City": "Reno",
+    "Salon": "Midtown Red Salon",
+    "Address 1": "1420 Holcomb Ave",
+    "Address 2": "Suite 101",
+    "Zip Code": 89502,
+    "Phone": "775-333-9090"
+  },
+  {
+    "State": "Texas",
+    "City": "Sugar Land",
+    "Salon": "Salon City",
+    "Address 1": "14019 SW Fwy",
+    "Address 2": "Ste 401",
+    "Zip Code": 77478,
+    "Phone": "281-240-4489"
+  },
+  {
+    "State": "Tennessee",
+    "City": "Smyma",
+    "Salon": "A Fuse Salon",
+    "Address 1": "112 Front St.",
+    "Address 2": null,
+    "Zip Code": 37167,
+    "Phone": "615-459-7554"
+  },
+  {
+    "State": "Kentucky",
+    "City": "Versailles",
+    "Salon": "Kristi's Hair Studio",
+    "Address 1": "467a Wilson Ave",
+    "Address 2": null,
+    "Zip Code": 40383,
+    "Phone": "859-693-3033"
+  },
+  {
+    "State": "Washington",
+    "City": "Silverdale",
+    "Salon": "Waterfront Hair Gallery",
+    "Address 1": "3594 Byron St",
+    "Address 2": "#104",
+    "Zip Code": 98383,
+    "Phone": "360-307-0514"
+  }
+]
