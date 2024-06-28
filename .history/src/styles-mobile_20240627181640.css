@@ -1886,12 +1886,6 @@
        display: none;
     }
 
-    .hero-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
     .hero-vid {
         width: 100%;
         height: 100%;

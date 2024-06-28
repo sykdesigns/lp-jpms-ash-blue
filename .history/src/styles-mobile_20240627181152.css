@@ -1886,14 +1886,9 @@
        display: none;
     }
 
-    .hero-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
     .hero-vid {
-        width: 100%;
+        grid-row: 1 / span 3;
+        width: 80%;
         height: 100%;
         position: relative;
         background-color: white;

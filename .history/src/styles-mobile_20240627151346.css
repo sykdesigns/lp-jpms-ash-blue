@@ -1886,14 +1886,9 @@
        display: none;
     }
 
-    .hero-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
     .hero-vid {
-        width: 100%;
+        grid-row: 1 / span 3;
+        width: 80%;
         height: 100%;
         position: relative;
         background-color: white;
@@ -1903,7 +1898,7 @@
     .hero-copy {
         position: absolute;
         top: 26%;
-        left: 65%;
+        left: 15%;
         background-color: rgba(255, 255, 255, 0.3);
         padding: 24px;
         z-index: 5;
