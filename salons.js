@@ -63,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 salonList.appendChild(salonDiv);
             });
         }
+
+        initializeCarousel();
     }
 
     function openModal() {
@@ -78,6 +80,22 @@ document.addEventListener('DOMContentLoaded', function() {
         window.open(mapsUrl, '_blank');
     }
     
+    function initializeCarousel() {
+        const swiper = new Swiper('.swiper-container', {
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
+
     // Accordion on mobile devices
     var acc = document.getElementsByClassName("accordion");
     var i;

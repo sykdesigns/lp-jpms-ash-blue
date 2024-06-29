@@ -252,14 +252,20 @@
             <div id="salonModal" class="modal">
                 <div class="modal-header" style="z-index: 2000;">-- Salons Near You --</div>
                 <div class="modal-body">
-                    <div id="totalResults" class="total-results"></div>
-                    <div id="salonList" class="carousel"></div>
+                    <div id="totalResults"></div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper" id="salonList"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <div class="modal-close" onclick="closeModal()">close x</div>
                 </div>
             </div>
         </article>
+        
         
             
       
@@ -422,7 +428,7 @@
           
         
 </footer>
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="salons.js"></script>
 </body>
 </html>
