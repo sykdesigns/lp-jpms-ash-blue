@@ -2555,7 +2555,7 @@
 
     .hero-copy {
         position: absolute;
-        top: 14%;
+        top: 18%;
         left: 54%;
         z-index: 5;
 
@@ -2616,6 +2616,7 @@
         position: relative;
         width: 94%;
         z-index: 2;
+        margin-left: 12px;
     }
 
     .image {
@@ -2703,7 +2704,7 @@
 
     .cards .card {
         display: grid;
-        grid-template-columns: 100px 2fr 1fr;
+        grid-template-columns: 100px 2fr;
         grid-template-rows: auto;
         color: #0A0A0A;
         background-color: #F8F8F8;
