@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             filteredSalons.forEach(salon => {
                 const salonDiv = document.createElement('div');
-                salonDiv.classList.add('salon');
+                salonDiv.classList.add('salon', 'swiper-slide');
                 salonDiv.innerHTML = `
                     <h3 class="salon-name">${salon.Salon}</h3>
                     <p>${salon['Address 1']} ${salon['Address 2'] || ''}</p>
