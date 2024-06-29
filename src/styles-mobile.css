@@ -2693,62 +2693,49 @@
 
     .block2 .cards {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 3;
         display: flex;
         flex-direction: column;
-        margin: auto;
         gap: 12px;
-        width: 80%;
-        margin-bottom: 48px;
+        width:100%;
+        padding: 0 48px 48px;
+       
+
     }
 
     .cards .card {
         display: grid;
         grid-template-columns: 100px 2fr 1fr;
         grid-template-rows: auto;
-        color: #0A0A0A;
+        color: #0A0A0A; 
         background-color: #F8F8F8;
         border-radius: 8px;
         padding: 8px;
         width: 100%;
-        overflow: hidden;
+        
     }
+
+    .card {
+        display: flex;
+        
+    }
+
+
 
     .cards .card-icon {
         grid-column: 1;
-        position: relative;
+        position: relative; 
         width: 100%;
         aspect-ratio: 1;
-        display: flex;
+        display: flex; 
         flex-direction: column;
-        justify-content: center;
+        justify-content: center; 
         align-items: center;
         align-self: center;
+    
     }
 
-    .card .card-copy {
-        grid-column: 2 / span 3;
-        font-size: 0.95rem;
-        padding: 24px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        word-wrap: break-word;
-        overflow: hidden;
-    }
 
-    .card .card-image {
-        grid-column: 3;
-        display: flex;
-        align-items: center;
-    }
-
-    .card .card-image img {
-        width: 100%;
-        height: 80%;
-    }
 
     .rotate-seesaw-1 {
         position: absolute;
@@ -2791,6 +2778,32 @@
         color: #8DAAC6;
         font-size: 1.5rem;
         font-weight: bold;
+    }
+
+    .card .card-copy {
+        grid-column: 2;
+        font-size: 0.95rem;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%; 
+        height: 100%; 
+   
+    }
+
+    .card .card-image {
+        grid-column: 3;
+        display: flex;
+        align-items: center;
+
+   
+    }
+
+    .card .card-image img {
+        width: 100%;
+        height: 80%;
+       
     }
 
 
@@ -3036,7 +3049,7 @@
     }
 
     .social {
-        width: 40%;
+        width: 50%;
         display: flex;
         justify-content: space-between;
         margin-bottom: 16px;
