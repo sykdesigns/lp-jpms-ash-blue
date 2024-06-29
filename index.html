@@ -248,19 +248,31 @@
             <select id="stateSelect">
                 <option> -- Select A State -- </option>
             </select>
-            
+        
             <div id="salonModal" class="modal">
                 <div class="modal-header">
-                    <span>-- Salons Near You --</span>
-                    <div class="modal-close" onclick="closeModal()">Close X</div>
+                    <span>Salons Near You</span>
+                    <div class="modal-close" onclick="closeModal()">X</div>
                 </div>
-                
+        
                 <div class="modal-body">
                     <div id="totalResults" class="total-results"></div>
-                    <div id="salonList" class="swiper-wrapper"></div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper" id="salonList">
+                            <!-- Slides will be inserted here by JavaScript -->
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
             </div>
         </article>
+        
+        
+        
         
         
         

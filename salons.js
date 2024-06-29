@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 displaySalons(salons, selectedState);
                 openModal();
             });
-        });
+        })
+        .catch(error => console.error('Error loading JSON data:', error));
 
     function populateStateSelect(salons) {
         const states = [...new Set(salons.map(salon => salon.State))].sort();
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function displaySalons(salons, state) {
-        salonList.innerHTML = '';
+        salonList.innerHTML = ''; // Clear previous results
         const filteredSalons = salons.filter(salon => salon.State === state);
         totalResults.textContent = `${filteredSalons.length} salons are in your area`;
 
@@ -39,12 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 salonDiv.classList.add('salon', 'swiper-slide');
                 salonDiv.innerHTML = `
                     <h3 class="salon-name">${salon.Salon}</h3>
-                    <p>${salon['Address 1']} ${salon['Address 2'] || ''}</p>
-                    <p>${salon.City}, ${salon.State}</p>
-                    <p>${salon.Phone}</p>
+                    <p class="salon-address">${salon['Address 1']} ${salon['Address 2'] || ''}</p>
+                    <p class="salon-address">${salon.City}, ${salon.State}</p>
+                    <p class="salon-phone">${salon.Phone}</p>
                 `;
 
                 const mapsButton = document.createElement('button');
+                mapsButton.classList.add('salon-button'); // Adding class to the button
                 mapsButton.textContent = 'Open in Google Maps';
                 mapsButton.style.padding = '8px 16px';
                 mapsButton.style.fontSize = '14px';
@@ -53,8 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 mapsButton.style.border = 'none';
                 mapsButton.style.borderRadius = '25px';
                 mapsButton.style.cursor = 'pointer';
-                mapsButton.style.marginTop = '12px';
-                mapsButton.style.marginBottom = '12px';
                 mapsButton.onclick = function() {
                     openInMaps(encodeURIComponent(salon['Address 1'] + ' ' + (salon['Address 2'] || '') + ' ' + salon.City + ' ' + salon.State + ' ' + salon['Zip Code']));
                 };
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
-        initializeCarousel();
+        initializeCarousel(); // Initialize Swiper carousel after adding salons
     }
 
     function openModal() {
@@ -79,36 +79,21 @@ document.addEventListener('DOMContentLoaded', function() {
         const mapsUrl = `https://www.google.com/maps?q=${address}`;
         window.open(mapsUrl, '_blank');
     }
-    
+
     function initializeCarousel() {
-        const swiper = new Swiper('.swiper-container', {
-            centeredSlides: true,
+        new Swiper('.swiper-container', {
             slidesPerView: 'auto',
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-        });
-    }
-
-    // Accordion on mobile devices
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
         });
     }
 });
