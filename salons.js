@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const stateSelect = document.getElementById('stateSelect');
     const salonList = document.getElementById('salonList');
     const salonModal = document.getElementById('salonModal');
-    const totalResults = document.getElementById('totalResults');
 
     // Fetch the JSON data
     fetch('salon_data.json')
@@ -14,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 displaySalons(salons, selectedState);
                 openModal();
             });
-        })
-        .catch(error => console.error('Error loading JSON data:', error));
+        });
 
     function populateStateSelect(salons) {
         const states = [...new Set(salons.map(salon => salon.State))].sort();
@@ -28,33 +26,34 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function displaySalons(salons, state) {
-        salonList.innerHTML = ''; // Clear previous results
+        salonList.innerHTML = '';
         const filteredSalons = salons.filter(salon => salon.State === state);
-        totalResults.textContent = `${filteredSalons.length} salons are in your area`;
 
         if (filteredSalons.length === 0) {
             salonList.innerHTML = '<p>No salons found in this state.</p>';
         } else {
             filteredSalons.forEach(salon => {
                 const salonDiv = document.createElement('div');
-                salonDiv.classList.add('salon', 'swiper-slide');
+                salonDiv.classList.add('salon');
+
                 salonDiv.innerHTML = `
-                    <h3 class="salon-name">${salon.Salon}</h3>
-                    <p class="salon-address">${salon['Address 1']} ${salon['Address 2'] || ''}</p>
-                    <p class="salon-address">${salon.City}, ${salon.State}</p>
-                    <p class="salon-phone">${salon.Phone}</p>
+                    <h3>${salon.Salon}</h3>
+                    <p>${salon['Address 1']} ${salon['Address 2'] || ''}</p>
+                    <p>${salon.City}, ${salon.State}</p>
+                    <p>${salon.Phone}</p>
                 `;
 
                 const mapsButton = document.createElement('button');
-                mapsButton.classList.add('salon-button'); // Adding class to the button
                 mapsButton.textContent = 'Open in Google Maps';
                 mapsButton.style.padding = '8px 16px';
                 mapsButton.style.fontSize = '14px';
                 mapsButton.style.color = 'white';
-                mapsButton.style.backgroundColor = 'black';
+                mapsButton.style.backgroundColor = 'black'; //color for Google Maps button
                 mapsButton.style.border = 'none';
                 mapsButton.style.borderRadius = '25px';
                 mapsButton.style.cursor = 'pointer';
+                mapsButton.style.marginTop = '12px';
+                mapsButton.style.marginBottom = '12px';
                 mapsButton.onclick = function() {
                     openInMaps(encodeURIComponent(salon['Address 1'] + ' ' + (salon['Address 2'] || '') + ' ' + salon.City + ' ' + salon.State + ' ' + salon['Zip Code']));
                 };
@@ -62,9 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 salonDiv.appendChild(mapsButton);
                 salonList.appendChild(salonDiv);
             });
-        }
 
-        initializeCarousel(); // Initialize Swiper carousel after adding salons
+            if (window.innerWidth < 620) {
+                initializeCarousel(); // Initialize the carousel for mobile
+            }
+        }
     }
 
     function openModal() {
@@ -81,19 +82,46 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function initializeCarousel() {
-        new Swiper('.swiper-container', {
-            slidesPerView: 'auto',
-            spaceBetween: 20,
-            centeredSlides: true,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+        let startX;
+        let scrollLeft;
+
+        salonList.addEventListener('mousedown', (e) => {
+            startX = e.pageX - salonList.offsetLeft;
+            scrollLeft = salonList.scrollLeft;
+            salonList.classList.add('active');
+        });
+
+        salonList.addEventListener('mouseleave', () => {
+            salonList.classList.remove('active');
+        });
+
+        salonList.addEventListener('mouseup', () => {
+            salonList.classList.remove('active');
+        });
+
+        salonList.addEventListener('mousemove', (e) => {
+            if (!salonList.classList.contains('active')) return;
+            e.preventDefault();
+            const x = e.pageX - salonList.offsetLeft;
+            const walk = (x - startX) * 3; //scroll-fast
+            salonList.scrollLeft = scrollLeft - walk;
+        });
+
+        salonList.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].pageX - salonList.offsetLeft;
+            scrollLeft = salonList.scrollLeft;
+            salonList.classList.add('active');
+        });
+
+        salonList.addEventListener('touchend', () => {
+            salonList.classList.remove('active');
+        });
+
+        salonList.addEventListener('touchmove', (e) => {
+            if (!salonList.classList.contains('active')) return;
+            const x = e.touches[0].pageX - salonList.offsetLeft;
+            const walk = (x - startX) * 3; //scroll-fast
+            salonList.scrollLeft = scrollLeft - walk;
         });
     }
 });
